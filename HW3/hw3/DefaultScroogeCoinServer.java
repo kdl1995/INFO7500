@@ -135,7 +135,7 @@ public class DefaultScroogeCoinServer implements ScroogeCoinServer {
 
 	private int getLedgerIndex(byte[] hashOfOutputTx, Set<UTXO> utxo, int opindex, Transaction.Input ip) {
 		for (int i = 0; i < ledger.size(); i++) {
-			if (Arrays.equals(ledger.get(i).getHash(), hashOfOutputTx)) {// !
+			if (Arrays.equals(ledger.get(i).getHash(), hashOfOutputTx)) {
 				HashPointer iphp = new HashPointer(ip.getHashOfOutputTx(), i);
 				UTXO iputxo = new UTXO(iphp, opindex);
 				if (utxo.contains(iputxo)) {
@@ -163,8 +163,8 @@ public class DefaultScroogeCoinServer implements ScroogeCoinServer {
 				}
 				break;
 			case Pay:
-				// output=>utxo
-				// input->utxo
+				// Used: all inputs, need to remove
+				// Unused: all outputs, need to add
 				for (int i = 0; i < trans.numInputs(); i++) {
 					Transaction.Input ip = trans.getInputs().get(i);
 					int opindex = ip.getIndexOfTxOutput();
