@@ -1,0 +1,16 @@
+Question 4: 
+(1) Current receive:
+n2mXbSAS2Tub4UntfANztGqUZNF1A3u63b
+
+Question 5:
+(1) Transaction ID: 
+f5466b831beda2bdd908d9337855468c8553c1c7a1bfc36c8d3dce080e744c46
+(2) Number of Coins: 
+2.00000000 tBTC
+(3) How many outputs does the transaction have: 
+2
+(4) What is the purpose of the output that locks coins to the address that?s not yours: 
+The purpose is to make them not be able to double-spent.
+
+Question 8:
+Address begin with '1ZHEN': 1ZHENW9j8CBUqfFDyo4aTMiqPVo9dbFk6
